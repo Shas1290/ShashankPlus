@@ -1,0 +1,176 @@
+.border {
+  border: 2px solid black;
+  margin: 3px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.bgblack {
+  background-color: black;
+  color: white;
+}
+
+
+
+input {
+  display: flex;
+  gap: 13px;
+  margin-top: -10px;
+  background: black;
+  border-radius: 33px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  line-height: normal;
+  font-style: normal;
+  background-color: #1f1f1f;
+  border: transparent;
+  margin-left: 2px;
+  width: 474px;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.butt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-style: normal;
+  /* width: 100%; */
+  font-family: 'Roboto', sans-serif, 'poppins';
+  font-weight: 700;
+  line-height: normal;
+  font-size: 16px;
+  color: grey;
+
+}
+
+
+.same {
+  display: flex;
+  justify-content: space-between;
+  /* margin: auto; */
+  align-items: center;
+  height: 62px;
+}
+
+.lib {
+  margin-top: 5px;
+  width: 100%;
+  font-style: normal;
+  font-size: 16px;
+  color: rgb(186, 176, 176);
+  line-height: normal;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.liv {
+  margin-left: 20px;
+  /* color: grey; */
+}
+
+h2:hover {
+  color: rgb(255, 255, 255);
+
+}
+
+.BB {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 20px;
+  gap: 10px;
+
+}
+
+.addi {
+  margin-right: 30px;
+  ;
+  margin-top: 12px;
+}
+
+.type {
+  font-family: Arial, Helvetica;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  line-height: normal;
+}
+
+.write {
+  font-family: Arial, Helvetica, "Helvetica neue";
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: normal;
+}
+
+.BB2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 20px;
+  gap: 10px;
+
+}
+
+.type2 {
+  font-family: Arial, Helvetica;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  line-height: normal;
+}
+
+.write2 {
+  font-family: Arial, Helvetica, "Helvetica neue";
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: normal;
+}
+
+.footer {
+  display: flex;
+  font-size: 10px;
+  gap: 13px;
+  position: absolute;
+  bottom: 0;
+  padding: 34px 0;
+}
+
+.footer a {
+  color: grey;
+
+}
+
+.down {
+  width: 16px;
+  margin-top: -11px;
+  margin-left: 10px;
+}
+
+.voltime {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}

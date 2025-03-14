@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility.css">
+  <link rel="stylesheet" href="plalist.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <nav>
+    <span class="logo"><img src="logo.svg" alt=""></span>
+
+    <span class="home"><img width="23px" src="home.svg" alt="Home"></span>
+    <div class="search">
+      <!-- <img width="30px" src="search.svg" alt=""> -->
+      <label for="myinput">
+        <input type="text" placeholder="           What do you want to play?">
+      </label>
+    </div>
+
+
+    <div class="navbar">
+      <span class="m1">Premium</span>
+      <span class="m2">Support</span>
+      <span class="m3">Download</span>
+      <div class="dot">
+
+      </div>
+
+      <div class="install">
+        <a draggable="false" class="inst" data-encore-id="buttonTertiary" href="/download"><span aria-hidden="true"
+            class="e-9640-button__icon-wrapper"> <img class="down" src="download.svg" alt=""></span><span class="ol"
+            data-encore-id="text">Install</span><span class="sorry">App</span></a>
+      </div>
+
+
+
+      <div class="buttons">
+        <button data-testid="signup-button" class="buttonsc ssc" data-encore-id="buttonTertiary"><span>Sign</span><span
+            class="ronnie">up</span> </button>
+        <button data-testid="login-button" data-encore-id="buttonPrimary" class="log">
+          <p>Log in</p>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+  <div class="hamburgerflex">
+    <img class="invert hamburger" src="hamburger.svg" alt="">
+  </div>
+  <div class="cross">
+    <img class="invert" width="29px" src="cross.svg" alt="">
+  </div>
+
+
+
+  <div class="container flex">
+
+    <div class="left border">
+      <div class="same">
+        <div class="butt">
+          <img class="liv" width="25px" src="Library.svg" alt="">
+          <h2 class="lib"> Your Library</h2>
+        </div>
+        <span>
+          <img class="addi" width="15px" src="add.svg" alt="">
+        </span>
+      </div>
+      <section class="box1">
+        <div class="BB">
+          <span class="type">Create your first playlist</span>
+          <span class="write">It's easy,we'll help you</span>
+        </div>
+        <div class="bns1">
+          <button class="bns">
+            <span>
+              Create playlist
+            </span>
+          </button>
+          <div class="footer">
+
+            <!-- <a href="https://www.spotify.com/in-en/legal/">
+              <span>Legal</span>
+            </a>
+
+            <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+              <span>Safety &amp; Privacy Center</span>
+            </a>
+
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+              <span>Privacy Policy</span>
+            </a>
+
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+              <span>Cookies</span>
+            </a>
+
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+              <span>About Ads</span>
+            </a>
+
+            <a href="https://www.spotify.com/in-en/accessibility/">
+              <span>Accessibility</span>
+            </a>
+
+            <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+              <span>Cookies</span>
+            </a> -->
+
+          </div>
+        </div>
+
+      </section>
+      <section class="box2">
+        <div class="BB2">
+          <span class="type2">Let's find some podcast to follow</span>
+          <span class="write2">We'll keep you updated on new episodes </span>
+        </div>
+        <div class="bns2">
+          <button class="bnss">
+            <span>
+              Browse podcasts
+            </span>
+          </button>
+        </div>
+      </section>
+      <section>
+        <div style="color: white;" class="songlist">
+          <ul >
+
+
+          </ul>
+        </div>
+
+      </section>
+
+      <div class="Library bgblack">
+
+      </div>
+    </div>
+
+    <div class="right border">
+      <section class="uppercontain playlist">
+        <div>
+          <div class="g1 g2 g3 g4 g5 g6">
+            <div class="g7 g8">
+              <div class="g9">
+                <h2 class="g10 g11 g12 g13 g14">
+                  <span class="g15">
+                    <a draggable="false" data-testid="see-all-link" href="/section/0JQ5DAnM3wGh0gz1MXnu3C">Popular
+                      artists</a>
+                  </span>
+                </h2>
+              </div>
+              <div class="g16">
+                <a draggable="false" class="g17" href="/section/0JQ5DAnM3wGh0gz1MXnu3C">
+                  <span class="g17 g18 g19" data-encore-id="text">Show all</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-testid="grid-container" class="g20 g21 g22 g23 g24" style="--min-column-width: 210px; --row-count:1;">
+          <div class="g25 g26 g27 " data-encore-id="card" role="group" draggable="true">
+            <div role="button" aria-disabled="false" tabindex="0" class="cardbutton g28"></div>
+            <div id="clickspotify" style="display: none;"></div>
+            <div class="g29">
+              <div class="oh g30" style="--card-color:#682828">
+                <div>
+                  <img aria-hidden="false" draggable="false" loading="lazy"
+                    src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" data-testid="card-image" alt
+                    class="g31 g32 g33 g34">
+                </div>
+              </div>
+              <div class="ohh">
+                <div class="so">
+                  <button data-testid="play-button" aria-label="Play Pritam" data-encore-id="buttonPrimary"
+                    data-is-icon-only="true" class="g35 g36">
+                    <span class=" g37 g38 g39 g40 g41">
+                     
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="shock">
+              <div class="g43">
+                <a draggable="false" class="g44" href="/artist/1wRPtKGflJrBx9BmLsSwlU">
+                  <p class="g45 g46 g47" title="Pritam" dir="auto">
+                    <span class="cardtitle g48">
+                      <span>Pritam</span>
+                    </span>
+                  </p>
+                </a>
+                <div class="g46 smallicon g49 g50">
+
+                  <span class="g51 g52">
+                    <div class="g46 g50 g53 g54 g55">
+                      <span>Artist</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div data-folder="cs" class="carded">
+              <span aria-hidden="true" class="g42">
+                <img class="genital" height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+              </span>
+
+            </div>
+            
+
+          </div>
+
+
+          <div class="g25 g26 g27" data-encore-id="card" role="group" draggable="true">
+            <div role="button" aria-disabled="false" tabindex="0" class="cardbutton g28"></div>
+            <div id="clickspotify" style="display: none;"></div>
+            <div class="g29">
+              <div class="oh g30" style="--card-color:#682828">
+                <div>
+                  <img aria-hidden="false" draggable="false" loading="lazy"
+                    src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" data-testid="card-image" alt
+                    class="g31 g32 g33 g34">
+                </div>
+              </div>
+              <div class="playboy">
+               
+              
+              </div>
+            </div>
+            <div class="shock">
+              <div class="g43">
+                <a draggable="false" class="g44" href="/artist/1wRPtKGflJrBx9BmLsSwlU">
+                  <p class="g45 g46 g47" title="Arijit Singh" dir="auto">
+                    <span class="cardtitle g48">
+                      <span>Arijit Singh</span>
+                    </span>
+                  </p>
+                </a>
+                <div class="g46 smallicon g49 g50">
+
+                  <span class="g51 g52">
+                    <div class="g46 g50 g53 g54 g55">
+                      <span>Artist</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div data-folder="ncs" class="carded">
+              <span aria-hidden="true" class="g42">
+                <img class="genital" height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+              </span>
+
+            </div>
+            
+
+          </div>
+          <div class="g25 g26 g27" data-encore-id="card" role="group" draggable="true">
+            <div role="button" aria-disabled="false" tabindex="0" class="cardbutton g28"></div>
+            <div id="clickspotify" style="display: none;"></div>
+            <div class="g29">
+              <div class="oh g30" style="--card-color:#682828">
+                <div>
+                  <img aria-hidden="false" draggable="false" loading="lazy"
+                  src="https://i.scdn.co/image/ab6761610000517464db06dfda27bb045bc1c2f5" data-testid="card-image" alt
+                    class="g31 g32 g33 g34">
+                </div>
+              </div>
+              <div class="ohh">
+                <div class="so">
+                  <button data-testid="play-button" aria-label="Play Sia" data-encore-id="buttonPrimary"
+                    data-is-icon-only="true" class="g35 g36">
+                    <span class=" g37 g38 g39 g40 g41">
+                      <span aria-hidden="true" class="g42">
+                        <img height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="shock">
+              <div class="g43">
+                <a draggable="false" class="g44" href="/artist/1wRPtKGflJrBx9BmLsSwlU">
+                  <p class="g45 g46 g47" title="Sia" dir="auto">
+                    <span class="cardtitle g48">
+                      <span> Sia </span>
+                    </span>
+                  </p>
+                </a>
+                <div class="g46 smallicon g49 g50">
+
+                  <span class="g51 g52">
+                    <div class="g46 g50 g53 g54 g55">
+                      <span>Artist</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span aria-hidden="true" class="g42">
+              <img class="genital" height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+            </span>
+
+          </div>
+          <div class="g25 g26 g27" data-encore-id="card" role="group" draggable="true">
+            <div role="button" aria-disabled="false" tabindex="0" class="cardbutton g28"></div>
+            <div id="clickspotify" style="display: none;"></div>
+            <div class="g29">
+              <div class="oh g30" style="--card-color:#682828">
+                <div>
+                  <img aria-hidden="false" draggable="false" loading="lazy"
+                    src="https://i.scdn.co/image/ab67616100005174a00b11c129b27a88fc72f36b" data-testid="card-image" alt
+                    class="g31 g32 g33 g34">
+                </div>
+              </div>
+              <div class="ohh">
+                <div class="so">
+                  <button data-testid="play-button" aria-label="Play Eminem" data-encore-id="buttonPrimary"
+                    data-is-icon-only="true" class="g35 g36">
+                    <span class=" g37 g38 g39 g40 g41">
+                      <span aria-hidden="true" class="g42">
+                        <img height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="shock">
+              <div class="g43">
+                <a draggable="false" class="g44" href="/artist/1wRPtKGflJrBx9BmLsSwlU">
+                  <p class="g45 g46 g47" title="Eminem" dir="auto">
+                    <span class="cardtitle g48">
+                      <span> Eminem</span>
+                    </span>
+                  </p>
+                </a>
+                <div class="g46 smallicon g49 g50">
+
+                  <span class="g51 g52">
+                    <div class="g46 g50 g53 g54 g55">
+                      <span>Artist</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span aria-hidden="true" class="g42">
+              <img class="genital" height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+            </span>
+
+          </div>
+          <div class="g25 g26 g27" data-encore-id="card" role="group" draggable="true">
+            <div role="button" aria-disabled="false" tabindex="0" class="cardbutton g28"></div>
+            <div id="clickspotify" style="display: none;"></div>
+            <div class="g29">
+              <div class="oh g30" style="--card-color:#682828">
+                <div>
+                  <img aria-hidden="false" draggable="false" loading="lazy"
+                    src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" data-testid="card-image" alt
+                    class="g31 g32 g33 g34">
+                </div>
+              </div>
+              <div class="ohh">
+                <div class="so">
+                  <button data-testid="play-button" aria-label="Play Atif Aslam" data-encore-id="buttonPrimary"
+                    data-is-icon-only="true" class="g35 g36">
+                    <span class=" g37 g38 g39 g40 g41">
+                      <span aria-hidden="true" class="g42">
+                        <img height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="shock">
+              <div class="g43">
+                <a draggable="false" class="g44" href="/artist/1wRPtKGflJrBx9BmLsSwlU">
+                  <p class="g45 g46 g47" title="Atif Aslam" dir="auto">
+                    <span class="cardtitle g48">
+                      <span> Atif Aslam</span>
+                    </span>
+                  </p>
+                </a>
+                <div class="g46 smallicon g49 g50">
+
+                  <span class="g51 g52">
+                    <div class="g46 g50 g53 g54 g55">
+                      <span>Artist</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span aria-hidden="true" class="g42">
+              <img class="genital" height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+            </span>
+
+          </div>
+          <div class="g25 g26 g27" data-encore-id="card" role="group" draggable="true">
+            <div role="button" aria-disabled="false" tabindex="0" class="cardbutton g28"></div>
+            <div id="clickspotify" style="display: none;"></div>
+            <div class="g29">
+              <div class="oh g30" style="--card-color:#682828">
+                <div>
+                  <img aria-hidden="false" draggable="false" loading="lazy"
+                    src="https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4" data-testid="card-image" alt
+                    class="g31 g32 g33 g34">
+                </div>
+              </div>
+              <div class="ohh">
+                <div class="so">
+                  <button data-testid="play-button" aria-label="Play Udit Narayan" data-encore-id="buttonPrimary"
+                    data-is-icon-only="true" class="g35 g36">
+                    <span class=" g37 g38 g39 g40 g41">
+                      <span aria-hidden="true" class="g42">
+                        <img height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="shock">
+              <div class="g43">
+                <a draggable="false" class="g44" href="/artist/1wRPtKGflJrBx9BmLsSwlU">
+                  <p class="g45 g46 g47" title="Udit Narayan" dir="auto">
+                    <span class="cardtitle g48">
+                      <span>Udit Narayan</span>
+                    </span>
+                  </p>
+                </a>
+                <div class="g46 smallicon g49 g50">
+
+                  <span class="g51 g52">
+                    <div class="g46 g50 g53 g54 g55">
+                      <span>Artist</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span aria-hidden="true" class="g42">
+              <img class="genital" height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+            </span>
+
+          </div>
+          <div class="g25 g26 g27" data-encore-id="card" role="group" draggable="true">
+            <div role="button" aria-disabled="false" tabindex="0" class="cardbutton g28"></div>
+            <div id="clickspotify" style="display: none;"></div>
+            <div class="g29">
+              <div class="oh g30" style="--card-color:#682828">
+                <div>
+                  <img aria-hidden="false" draggable="false" loading="lazy"
+                    src="https://i.scdn.co/image/ab6761610000517439ba6dcd4355c03de0b50918" data-testid="card-image" alt
+                    class="g31 g32 g33 g34">
+                </div>
+              </div>
+              <div class="ohh">
+                <div class="so">
+                  <button data-testid="play-button" aria-label="Play Kendrick Lamar" data-encore-id="buttonPrimary"
+                    data-is-icon-only="true" class="g35 g36">
+                    <span class=" g37 g38 g39 g40 g41">
+                      <span aria-hidden="true" class="g42">
+                        <img height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="shock">
+              <div class="g43">
+                <a draggable="false" class="g44" href="/artist/1wRPtKGflJrBx9BmLsSwlU">
+                  <p class="g45 g46 g47" title="Kendrick Lamar" dir="auto">
+                    <span class="cardtitle g48">
+                      <span>Kendrick Lamar</span>
+                    </span>
+                  </p>
+                </a>
+                <div class="g46 smallicon g49 g50">
+
+                  <span class="g51 g52">
+                    <div class="g46 g50 g53 g54 g55">
+                      <span>Artist</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span aria-hidden="true" class="g42">
+              <img class="genital" height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+            </span>
+
+          </div>
+          <div class="g25 g26 g27" data-encore-id="card" role="group" draggable="true">
+            <div role="button" aria-disabled="false" tabindex="0" class="cardbutton g28"></div>
+            <div id="clickspotify" style="display: none;"></div>
+            <div class="g29">
+              <div class="oh g30" style="--card-color:#682828">
+                <div>
+                  <img aria-hidden="false" draggable="false" loading="lazy"
+                    src="https://i.scdn.co/image/ab6761610000517459303d54ce789210e745e1a9" data-testid="card-image" alt
+                    class="g31 g32 g33 g34">
+                </div>
+              </div>
+              <div class="ohh">
+                <div class="so">
+                  <button data-testid="play-button" aria-label="Play Shreya Ghosal" data-encore-id="buttonPrimary"
+                    data-is-icon-only="true" class="g35 g36">
+                    <span class=" g37 g38 g39 g40 g41">
+                      <span aria-hidden="true" class="g42">
+                        <img height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="shock">
+              <div class="g43">
+                <a draggable="false" class="g44" href="/artist/1wRPtKGflJrBx9BmLsSwlU">
+                  <p class="g45 g46 g47" title="Shreya Ghosal" dir="auto">
+                    <span class="cardtitle g48">
+                      <span>Shreya Ghosal</span>
+                    </span>
+                  </p>
+                </a>
+                <div class="g46 smallicon g49 g50">
+
+                  <span class="g51 g52">
+                    <div class="g46 g50 g53 g54 g55">
+                      <span>Artist</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span aria-hidden="true" class="g42">
+              <img class="genital" height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+            </span>
+
+          </div>
+          <div class="g25 g26 g27" data-encore-id="card" role="group" draggable="true">
+            <div role="button" aria-disabled="false" tabindex="0" class="cardbutton g28"></div>
+            <div id="clickspotify" style="display: none;"></div>
+            <div class="g29">
+              <div class="oh g30" style="--card-color:#682828">
+                <div>
+                  <img aria-hidden="false" draggable="false" loading="lazy"
+                    src="https://i.scdn.co/image/ab67616100005174b09a31f853166e721d4d46b2" data-testid="card-image" alt
+                    class="g31 g32 g33 g34">
+                </div>
+              </div>
+              <div class="ohh">
+                <div class="so">
+                  <button data-testid="play-button" aria-label="Play KK" data-encore-id="buttonPrimary"
+                    data-is-icon-only="true" class="g35 g36">
+                    <span class=" g37 g38 g39 g40 g41">
+                      <span aria-hidden="true" class="g42">
+                        <img height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="shock">
+              <div class="g43">
+                <a draggable="false" class="g44" href="/artist/1wRPtKGflJrBx9BmLsSwlU">
+                  <p class="g45 g46 g47" title="KK" dir="auto">
+                    <span class="cardtitle g48">
+                      <span>KK</span>
+                    </span>
+                  </p>
+                </a>
+                <div class="g46 smallicon g49 g50">
+
+                  <span class="g51 g52">
+                    <div class="g46 g50 g53 g54 g55">
+                      <span>Artist</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span aria-hidden="true" class="g42">
+              <img class="genital" height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+            </span>
+
+          </div>
+          <div class="g25 g26 g27" data-encore-id="card" role="group" draggable="true">
+            <div role="button" aria-disabled="false" tabindex="0" class="cardbutton g28"></div>
+            <div id="clickspotify" style="display: none;"></div>
+            <div class="g29">
+              <div class="oh g30" style="--card-color:#682828">
+                <div>
+                  <img aria-hidden="false" draggable="false" loading="lazy"
+                    src="https://i.scdn.co/image/ab67616100005174bc7e4fffd515b47ff1ebbc1f" data-testid="card-image" alt
+                    class="g31 g32 g33 g34">
+                </div>
+              </div>
+              <div class="ohh">
+                <div class="so">
+                  <button data-testid="play-button" aria-label="Play Yo YO Honey Singh" data-encore-id="buttonPrimary"
+                    data-is-icon-only="true" class="g35 g36">
+                    <span class=" g37 g38 g39 g40 g41">
+                      <span aria-hidden="true" class="g42">
+                        <img height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+                      </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="shock">
+              <div class="g43">
+                <a draggable="false" class="g44" href="/artist/1wRPtKGflJrBx9BmLsSwlU">
+                  <p class="g45 g46 g47" title="Yo YO Honey Singh" dir="auto">
+                    <span class="cardtitle g48">
+                      <span>Yo YO Honey Singh</span>
+                    </span>
+                  </p>
+                </a>
+                <div class="g46 smallicon g49 g50">
+
+                  <span class="g51 g52">
+                    <div class="g46 g50 g53 g54 g55">
+                      <span>Artist</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <span aria-hidden="true" class="g42">
+              <img class="genital" height="24px" style="color:rgba(0, 0, 0, 1)" width="24px" src="what.svg" alt="">
+            </span>
+
+          </div>
+        </div>
+
+
+
+      </section>
+
+
+
+
+
+
+      <footer class="yellow">
+
+        <div class="seek">
+          <div class="circle">
+
+          </div>
+        </div>
+        <div class="play">
+
+
+          <div id="myH2" class="songinfo">
+
+          </div>
+          <div class="songbutton">
+
+            <span><img id="shuffle" class="bitch" width="16px" height="16px" src="shuffle.svg" alt=""></span>
+            <span><img id="previous" class="hi" width="25px" src="back.svg" alt=""></span>
+            <span><img id="play" class="hello" width="36px" src="player.svg" alt=""></span>
+            <span><img id="next" class="who" width="25px" src="forward.svg" alt=""></span>
+            <span><img id="loop" class="slut" width="16px" height="16px" src="loop.svg" alt=""></span>
+
+          </div>
+
+          <div id="myP" class="timeline">
+
+          </div>
+        </div>
+        <div class="volume">
+          <span><img width="22px" src="volume.svg" alt=""></span>
+          <span class="voltime"></span>
+          <div class="range">
+            <input type="range" name="volume" id="">
+          </div>
+        </div>
+
+
+
+      </footer>
+</body>
+
+</html>

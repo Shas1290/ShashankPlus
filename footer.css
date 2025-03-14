@@ -1,0 +1,112 @@
+.yellow{
+    display: flex;
+    gap: 5px;
+     background-color: black;
+     height: 75px;
+     align-items: center;
+     justify-content: center;
+     position: fixed;
+     bottom: 0;
+     width: 50%;
+     height: 119px;
+
+     margin-left: 34px;
+     
+     /* width: 70vw; */
+}
+.hello{
+    margin-top: 10px;
+   background-color: white;
+   border-radius: 110px;
+  
+}
+.who{
+    color: white;
+    margin: 5px;
+}
+.hi{
+color: white;
+margin: 5px;
+}
+.play{
+    /* margin-top: 24px; */
+}
+.bitch{
+    margin: 11px;
+}
+.slut{
+    margin: 11px;
+}
+.songlist ul{
+    padding: 0 12px;
+}
+.songlist ul li{
+    padding: 0 42px;
+    cursor: pointer;
+    list-style-type: decimal;
+    color: white;
+    display: flex;
+    gap: 34px;
+    margin-top: 9px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 13px;
+    justify-content: space-between;
+    /* margin: 12px 0; */
+
+}
+.bc{
+    color: white;
+}
+.hero{
+    color: white;
+    /* margin-left: -23px; */
+    /* margin-top: -11px; */
+}
+.Iam{
+    /* margin-left: 34px; */
+}
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songlist .info{
+    /* font-size: 13px;
+    width: 344px; */
+}
+.songlist{
+    height: 344px;
+    overflow: auto;
+}
+.seek{
+    height: 3px;
+    width: 100%;
+ background: white;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    border-radius: 10px;
+    margin: 6px;
+    cursor: pointer;
+    
+    /* border: transparent;
+    background-color: grey; */
+}
+.circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background: white;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.songbutton img{
+    cursor: pointer;
+}
+.hamburgerflex{
+   
+
+}
